@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+.vscode/*.log
+outputs/local/
+data/cache/
+*.tmp
+*.bak
+.env
+.vscode/
+outputs/external_debug/
