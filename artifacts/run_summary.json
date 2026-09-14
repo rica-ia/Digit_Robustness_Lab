@@ -1,0 +1,144 @@
+{
+  "run_mode": "NOTEBOOK_FULL",
+  "seed": 42,
+  "split": {
+    "train": 49000,
+    "validation": 7000,
+    "test": 14000
+  },
+  "champion_selected_on_validation": "MLP Keras",
+  "test_metrics": {
+    "Logistic Regression": {
+      "accuracy": 0.9203571428571429,
+      "precision_weighted": 0.9200696072840914,
+      "recall_weighted": 0.9203571428571429,
+      "f1_weighted": 0.9201394281845073
+    },
+    "Random Forest": {
+      "accuracy": 0.9663571428571428,
+      "precision_weighted": 0.9663597713536506,
+      "recall_weighted": 0.9663571428571428,
+      "f1_weighted": 0.9663401112883219
+    },
+    "MLP Keras": {
+      "accuracy": 0.9761428571428571,
+      "precision_weighted": 0.9762412844780015,
+      "recall_weighted": 0.9761428571428571,
+      "f1_weighted": 0.9761081912715769
+    }
+  },
+  "reload_checks": {
+    "lr": true,
+    "rf": true,
+    "mlp": true
+  },
+  "ood": {
+    "hidden_classes": [
+      4,
+      7
+    ],
+    "known_classes": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6,
+      8,
+      9
+    ],
+    "masked_model": "MLP Keras 8 outputs",
+    "masked_epochs": 14,
+    "masked_fit_seconds": 21.44374377198983,
+    "id_metrics_known_classes": {
+      "accuracy": 0.9785254115962777,
+      "precision_weighted": 0.9786726334346555,
+      "recall_weighted": 0.9785254115962777,
+      "f1_weighted": 0.9785260881404378
+    },
+    "id_uncertainty": {
+      "msp_mean": 0.9863969683647156,
+      "msp_median": 0.9999667406082153,
+      "msp_p90": 0.9999998807907104,
+      "msp_p95": 1.0,
+      "entropy_mean": 0.03889478339289016,
+      "entropy_median": 0.0003971702419053607
+    },
+    "ood_uncertainty": {
+      "msp_mean": 0.8732593059539795,
+      "msp_median": 0.9594378471374512,
+      "msp_p90": 0.9997425079345703,
+      "msp_p95": 0.9999399781227112,
+      "entropy_mean": 0.3367291724345551,
+      "entropy_median": 0.19464807197971273
+    },
+    "ood_samples": 2824
+  },
+  "own_image": {
+    "status": "PASS",
+    "file": "Numeros_manuscritos.jpg",
+    "ink": "caneta esferografica azul",
+    "segmentation": {
+      "detected_digits": 14,
+      "expected_digits": 14,
+      "blue_excess_threshold": 10.0,
+      "dilation_iterations": 1,
+      "ordering": "top-to-bottom_then_left-to-right"
+    },
+    "expected_labels": [
+      1,
+      2,
+      2,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      7,
+      7,
+      8,
+      9,
+      0
+    ],
+    "model_summary": {
+      "Logistic Regression": {
+        "correct": 9,
+        "total": 14,
+        "accuracy": 0.6428571428571429,
+        "mean_confidence": 0.6192861397282202
+      },
+      "Random Forest": {
+        "correct": 11,
+        "total": 14,
+        "accuracy": 0.7857142857142857,
+        "mean_confidence": 0.5200892857142857
+      },
+      "MLP Keras": {
+        "correct": 14,
+        "total": 14,
+        "accuracy": 1.0,
+        "mean_confidence": 0.8683106814111982
+      }
+    },
+    "champion": "MLP Keras",
+    "champion_predictions": [
+      1,
+      2,
+      2,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      7,
+      7,
+      8,
+      9,
+      0
+    ],
+    "champion_accuracy": 1.0
+  },
+  "status": "COMPLETE"
+}
