@@ -1,0 +1,9 @@
+{
+  "python": "3.12.14",
+  "numpy": "2.5.3",
+  "pandas": "3.0.5",
+  "scikit_learn": "1.9.1",
+  "tensorflow": "2.21.0",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+  "seed": 42
+}
