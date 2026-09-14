@@ -1,0 +1,42 @@
+{
+  "hidden_classes": [
+    4,
+    7
+  ],
+  "known_classes": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    8,
+    9
+  ],
+  "masked_model": "MLP Keras 8 outputs",
+  "masked_epochs": 14,
+  "masked_fit_seconds": 21.44374377198983,
+  "id_metrics_known_classes": {
+    "accuracy": 0.9785254115962777,
+    "precision_weighted": 0.9786726334346555,
+    "recall_weighted": 0.9785254115962777,
+    "f1_weighted": 0.9785260881404378
+  },
+  "id_uncertainty": {
+    "msp_mean": 0.9863969683647156,
+    "msp_median": 0.9999667406082153,
+    "msp_p90": 0.9999998807907104,
+    "msp_p95": 1.0,
+    "entropy_mean": 0.03889478339289016,
+    "entropy_median": 0.0003971702419053607
+  },
+  "ood_uncertainty": {
+    "msp_mean": 0.8732593059539795,
+    "msp_median": 0.9594378471374512,
+    "msp_p90": 0.9997425079345703,
+    "msp_p95": 0.9999399781227112,
+    "entropy_mean": 0.3367291724345551,
+    "entropy_median": 0.19464807197971273
+  },
+  "ood_samples": 2824
+}
