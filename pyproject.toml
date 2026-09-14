@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "digit-robustness-lab"
+version = "1.0.0"
+description = "Benchmark MNIST, Class Masking, OOD e inferência externa."
+requires-python = ">=3.12,<3.13"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"
