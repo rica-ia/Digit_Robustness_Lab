@@ -1,0 +1,9 @@
+{
+  "file": "Numeros_manuscritos.jpg",
+  "expected_labels": [1, 2, 2, 2, 3, 4, 5, 6, 7, 7, 7, 8, 9, 0],
+  "ink": "caneta esferografica azul",
+  "ordering": "top-to-bottom, then left-to-right",
+  "blue_excess_threshold": 10,
+  "dilation_iterations": 1,
+  "note": "Folha fotografada pelo autor com 14 digitos manuscritos; o zero esta na parte inferior."
+}
