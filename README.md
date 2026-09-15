@@ -134,9 +134,11 @@ O notebook final foi executado integralmente no Google Colab com Python 3.13.15 
 
 A MLP manteve a liderança observada na validação e apresentou a melhor generalização entre os três modelos.
 
-### 7.2 Execução de referência dos artefatos persistidos
+### 7.2 Execução local dos artefatos persistidos do portal
 
-Os modelos e resultados persistidos utilizados pelo portal foram também validados em ambiente local Python 3.12.14 / TensorFlow 2.21.0. Nessa execução de referência, a MLP atingiu **97,61% de Accuracy** e **97,61% de F1 ponderado**. Logistic Regression atingiu 92,04% e Random Forest 96,64% de Accuracy.
+Os valores **oficiais da entrega acadêmica** são os da seção 7.1 e do notebook executado: **92,05%**, **96,64%** e **97,50% de Accuracy** para Logistic Regression, Random Forest e MLP Keras, respectivamente.
+
+Os modelos persistidos utilizados pelo portal pertencem a uma **execução local distinta**, em Python 3.12.14 / TensorFlow 2.21.0. Nessa execução de apoio, a MLP atingiu **97,61% de Accuracy** e **97,61% de F1 ponderado**; Logistic Regression atingiu 92,04% e Random Forest 96,64% de Accuracy. Esses números não substituem os resultados acadêmicos do notebook e são mantidos apenas para documentar os artefatos efetivamente carregados pelo portal.
 
 A pequena variação entre execuções decorre do ambiente numérico de treinamento, sem alteração de arquitetura, split, sementes, hiperparâmetros ou protocolo experimental. O arquivo `environment_info.json` descreve o ambiente dos artefatos persistidos; o próprio notebook registra o ambiente de sua execução final.
 
