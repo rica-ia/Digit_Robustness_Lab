@@ -34,6 +34,7 @@
 | Modelos | Logistic Regression, Random Forest e MLP TensorFlow/Keras |
 | Modelo campeão | MLP Keras |
 | Desafios | Class Masking, OOD semântico e inferência manuscrita externa |
+| Framework | Interface web interativa para exploração, comparação, robustez, modelo campeão e benchmark de desempenho |
 | Licença | MIT |
 
 ---
@@ -45,6 +46,12 @@ O projeto investiga o reconhecimento de dígitos manuscritos em três níveis co
 O notebook acadêmico é autônomo: não depende de caminhos locais nem dos módulos disponíveis em `src/`. O pacote em `src/digit_robustness/` oferece uma implementação reutilizável para scripts, testes automatizados e portal interativo. Em ambos os fluxos, o conjunto de teste permanece fora da seleção de modelos e hiperparâmetros.
 
 A entrega registra o experimento em múltiplos níveis: notebook executado, índices do split, modelos persistidos, métricas em JSON e CSV, matrizes de confusão, gráficos OOD, evidências da inferência manuscrita, testes automatizados, scripts reproduzíveis e interface web de demonstração.
+
+### 2.1 Framework interativo
+
+O repositório inclui também o **framework interativo do Digit Robustness Lab**, implementado em `app/`. Ele reúne, em uma interface web, a exploração do MNIST, comparação entre Logistic Regression, Random Forest e MLP Keras, análise de robustez/OOD, visualização do modelo campeão e benchmarks de desempenho.
+
+O framework utiliza os modelos e artefatos persistidos do projeto e foi criado como camada de demonstração e inspeção dos resultados. Seus principais componentes estão em `app/app.py`, `app/web.py`, `app/gradio_app.py` e `app/static/`. Os scripts `INICIAR_PORTAL.bat`, `iniciar_portal.ps1` e `iniciar_portal.sh` permitem iniciar a interface nos ambientes suportados.
 
 ---
 
