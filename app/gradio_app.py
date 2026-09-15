@@ -91,7 +91,7 @@ def build_demo() -> gr.Blocks:
         gr.Markdown("# Digit Robustness Lab\nBenchmark MNIST, robustez OOD e inferência externa.")
         with gr.Tab("Overview"):
             gr.Markdown(_overview_text())
-            gr.Dataframe(value=_benchmark_frame(), interactive=False, label="Benchmark final")
+            gr.Dataframe(value=_benchmark_frame(), interactive=False, label="Benchmark da execução local persistida")
         with gr.Tab("OOD Lab"):
             gr.JSON(value=ood, label="Diagnóstico ID × OOD")
             gr.Image(
